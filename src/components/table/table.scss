@@ -1,0 +1,32 @@
+.table {
+  .cellWrapper {
+    display: flex;
+    align-items: center;
+
+    .image {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .status {
+    padding: 5px;
+    border-radius: 5px;
+
+    &.Delivered {
+      background-color: rgba(0, 128, 0, 0.05);
+      color: green;
+    }
+    &.Processing {
+      background-color: rgba(255, 217, 0, 0.05);
+      color: goldenrod;
+    }
+    &.Canceled {
+      background-color: rgba(255, 0, 0, 0.05);
+      color: crimson;
+    }
+  }
+}
